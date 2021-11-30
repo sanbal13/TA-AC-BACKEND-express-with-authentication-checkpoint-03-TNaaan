@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home | Expense Tracker</title>
+    <%- include('partials/include') %>
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <!-- Hero Section -->
+    <section class="hero hero-contact"></section>
+    <!-- Main Section -->
+    <main>
+      <section class="connect flex container flex-end">
+        <div class="form">
+          <h4>Connect with Us</h4>
+          <form action="" method="get" class="contact-form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter your name"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter your email"
+            />
+            <input
+              type="number"
+              name="mobile"
+              id="mobile"
+              placeholder="Enter your mobile number"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              required
+              placeholder="Express your thoughts..."
+            ></textarea
+            >
+            <input type="submit" value="Connect with Expense Tracker Team" />
+          </form>
+        </div>
+        <div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13503.55258991799!2d76.355385!3d32.2072445!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1637157417875!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          <div class="address">
+            <address>
+              <h3>Expense Tracker</h3>
+              <p>Thehr, Dharamshala, Himachal Pradesh 176057</p>
+            </address>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <%- include('partials/footer') %>
+  </body>
+</html>
