@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home | Expense Tracker</title>
+    <%- include('partials/include') %>
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <!-- Hero Section -->
+    <section class="hero flex">
+      <div class="hero-text flex-50">
+      <h1> Income - Expense = Savings </h1>
+      <h2> Track your money and make wise decisions.</h2>
+    </div>
+    <div class="hero-img flex-50">
+      <img src="/images/hero.jpg" alt="money-plant">
+    </div>
+    </section>
+    <main>
+      <!-- About Section -->
+      <section class="about flex padding">
+        <div class="income equation">
+        <h3>Income</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim omnis rerum adipisci illum atque officiis, neque consequuntur fugiat, facere blanditiis vel nulla. Possimus sed amet delectus laudantium expedita libero minima.</p>
+        </div>
+        <span class="minus equation">
+        -
+        </span>
+        <div class="expense equation">
+        <h3>Expense</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis non quisquam maxime alias? Ad vitae sapiente nihil consequatur et impedit, aperiam voluptates tenetur quos ipsam facere provident a obcaecati?</p>
+        </div>
+        <span class="equal equation">
+        =
+        </span>
+        <div class="savings equation">
+        <h3>Savings</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim similique nam iure ad quibusdam ullam dolorum nesciunt, voluptate et tempore omnis dignissimos, molestias nulla odio expedita! Rerum illum incidunt numquam.</p>
+        </div>  
+      </section>
+      <!-- Testimonials Section -->
+      <section class="testimonials padding">
+        <div class="container flex">
+          <div class="testimonial-block">
+            <span class="dp">
+              <img src ='/images/user1.jpg' alt="user1">
+            </span>
+            <p class="testimonial-block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est odit repellat vel perferendis, autem id ipsum? Id, consectetur quod eius eum itaque maiores dolores a, repellendus nemo delectus recusandae!
+            </p>
+            <span class="testimonial-user">
+              - Jenie Root
+            </span>
+          </div>
+          <div class="testimonial-block">
+            <span class="dp">
+              <img src ='/images/user2.jpg' alt="user1">
+            </span>
+            <p class="testimonial-block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est odit repellat vel perferendis, autem id ipsum? Id, consectetur quod eius eum itaque maiores dolores a, repellendus nemo delectus recusandae!
+            </p>
+            <span class="testimonial-user">
+              - Blake Johnson
+            </span>
+          </div>
+          <div class="testimonial-block">
+            <span class="dp">
+              <img src ='/images/user3.jpg' alt="user1">
+            </span>
+            <p class="testimonial-block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est odit repellat vel perferendis, autem id ipsum? Id, consectetur quod eius eum itaque maiores dolores a, repellendus nemo delectus recusandae!
+            </p>
+            <span class="testimonial-user">
+              - Andrea Mind
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>

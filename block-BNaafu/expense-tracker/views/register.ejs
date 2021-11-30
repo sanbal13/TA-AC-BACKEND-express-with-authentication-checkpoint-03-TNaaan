@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Expense Tracker</title>
+    <%- include('partials/include') %>
+
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <div class="container">
+        <form action="/users/login" method="post">
+        <legend>Register</legend>
+        <fieldset>
+            <label>
+                <span class="label">Name</span>
+                <input type="name" name="name" id="name" placeholder="Enter your Name">
+            </label>   
+            <label>
+                <span class="label">Email</span>
+                <input type="email" name="email" id="email" placeholder="Enter your Email">
+            </label>       
+            <label>
+                <span class="label">Password</span>
+                <input type="password" name="password" id="password" placeholder="Enter your Password">
+            </label>
+            <label>
+                <span class="label">Age</span>
+                <input type="Age" name="age" id="age" placeholder="Enter your Age">
+            </label>   
+            <label>
+                <span class="label">Phone</span>
+                <input type="Phone" name="email" id="Phone" placeholder="Enter your Phone">
+            </label>
+            <label>
+                <span class="label">Country</span>
+                <input type="country" name="country" id="country" placeholder="Enter your Country">
+            </label>   
+            <input type="submit" value="Register">
+        </fieldset>
+        </form>
+    </div>
+    </main>
+    <%- include('partials/footer') %>    
+</body>
+</html>

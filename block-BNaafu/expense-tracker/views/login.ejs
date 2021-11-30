@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Expense Tracker</title>
+    <%- include('partials/include') %>
+
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <div class="container">
+         <section class="oauth">
+            <a href='/auth/google' class="oauth-button">
+                <i class="fab fa-google"></i>
+                Login using Google
+            </a>
+            <a href='/auth/github' class="oauth-button">
+                <i class="fab fa-github"></i>
+                Login using Github
+            </a>
+         </section>
+         <div class="or">OR</div>
+         <section class="form">
+        <form action="/users/login" method="post">
+        <legend>Login Form</legend>
+        <fieldset>
+            <label>
+                <span class="label">Email</span>
+                <input type="email" name="email" id="email" placeholder="Enter your Email">
+            </label>       
+            <label>
+                <span class="label">Password</span>
+                <input type="password" name="password" id="password" placeholder="Enter your Password">
+            </label>
+            <div class="flex">
+            <input type="submit" value="Login">            
+            <div class="register">                
+                <a href="/users/register">Register</a>
+            </div>
+        </div>
+        </fieldset>
+        </form>
+    </section>   
+    </div>
+    </main>
+    <%- include('partials/footer') %>    
+</body>
+</html>
