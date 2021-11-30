@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*************************** Custom Styles begins here ********************/
+html {
+  font-size: 16px;
+}
+body {
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+.padding {
+  padding: 5rem 2rem;
+}
+
+/**************************** Headings ****************************/
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+/**************************** flex ****************************/
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-50 {
+  flex: 0 1 50%;
+}
+.flex-end {
+  align-items: flex-end;
+}
+/**************************** Header ****************************/
+header {
+  padding-bottom: 2rem;
+  background: linear-gradient(to right, rgba(255, 255, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 1px 1px .5rem black;
+  background-attachment: fixed;
+}
+.brand {
+  clip-path: polygon(0% 30%, 20% 0%, 40% 30%, 60% 0%, 80% 30%, 100% 0%, 
+                     90% 50%, 
+                     100% 90%, 80% 100%, 60% 80%, 40% 100%, 20% 80%, 0% 100%,
+                     10% 50%);
+  border: 5px solid #000;
+ background-color: rgb(170, 250, 170);;
+  padding: 20px 30px;
+  transform: rotate(-20deg);
+  color: green;
+  font-size:1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 50px #fff;
+}
+.header-nav {
+  margin-left: 1rem;
+  color: green;
+  background-color: rgb(170, 250, 170);;
+  border: 5px solid #000;
+  padding: 1rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 50%);
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #000;
+}
+.header-nav:hover {
+  background-color: rgba(250, 189, 170, 0.5);
+  color: #fff;
+}
+.current-link {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: rgb(250, 189, 170);;  
+  border-radius: 0;
+}
+/**************************** Hero ****************************/
+.hero {
+  background-color: rgb(170, 250, 170);;
+  padding: 2rem;
+  box-shadow: inset 1px 1px .5rem grey;
+}
+.hero-text {
+  text-shadow: 1px 1px 1px grey;
+  text-align: center;
+  box-shadow: 1px 1px 2rem #000;   
+  padding: 2rem;
+  margin: 5rem;
+}
+.hero-img {
+  border-radius: 50%;
+  box-shadow: 1px 1px 2rem #000;  
+  font-size: 0;
+}
+.hero-img img {
+  border-radius: 50%;  
+}
+
+/**************************** About ****************************/
+.about {
+  box-shadow: inset 1px 1px .5rem grey;
+  background-image: url('/images/coins.png');
+  background-repeat: repeat;
+  background-size: contain;
+}
+.equation {
+  box-shadow: inset 1px 1px 2rem #000;
+  background-color: rgb(170, 250, 170);;
+  color: #000;
+  padding: 1rem;
+  margin: 1rem;
+}
+.minus, .equal {
+  font-weight: 700;
+  font-size: 2rem;
+  background-color: unset;
+}
+
+/**************************** Footer ****************************/
+.testimonials {
+  background-color: rgb(170, 250, 170);
+  box-shadow: inset 1px 1px .5rem grey;
+}
+.testimonial-block {
+ margin-right: 1rem;
+ background-color: rgba(0, 0, 0, .8);
+ color: #fff;
+ padding: 1rem;
+ margin-top: 1rem;
+ box-shadow: inset 1px 1px .5rem grey;
+}
+.dp {
+  display: inline-block;
+  border-radius: 50%;
+  width: 20%;
+  border: 2px solid #fff;
+}
+.dp img {
+  height: 5rem;
+  border-radius: 50%;
+}
+.testimonial-user {
+  display: inline-block;
+  text-align: right;
+  font-size: 2rem;
+}
+/**************************** Footer ****************************/
+footer {
+  background-color: black;
+  color: rgb(170, 250, 170);;
+  text-align: center;
+  font-weight: 700;
+  padding: 1rem;
+  box-shadow: inset 1px 1px .5rem grey;
+}
+
+
+
+
+/**************************** Form ****************************/
+form, .oauth {
+  width: 300px;
+  margin: 2rem auto;
+  /* border: 2px solid #000; */
+  padding: 2rem;
+  box-shadow: inset 0px 0px 20px grey;
+}
+legend {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.label, input {
+  display: block;
+}
+input {
+  margin-top: .25rem;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+}
+.register {
+  margin-right: 2rem;
+  text-decoration: underline;
+}
+.oauth-button {
+  display: block;
+  border: 1px solid grey;
+  padding: 1rem .5rem;
+  margin-bottom: 1rem;
+  color: green;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px green;
+}
+.oauth-button:hover  {
+  background-color: green;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.oauth-button i {
+  margin: 0 1rem;
+}
+.or {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/**************************** Contact ****************************/
+.connect {
+  margin: 2rem auto;
+  /* border: .1rem solid orange; */
+}
+.hero-contact {
+  background-image: url('/images/contact.jpg');
+  height: 60vh;
+  background-size: cover;
+  background-position: 60% 60%;
+}
+.contact-form {
+  width: 200%;
+  margin: 0;
+  margin-top: 1rem;
+
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  border-radius: .5rem;
+  border-color: blue;
+  border: .1rem solid pink;
+}
+.contact-form textarea {
+  padding: 1rem;
+}
+.social i {
+  color: grey;
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.social i:hover {
+  color: green
+}
+.map {
+  width: 100%;
+  border-radius: 50%;
+}
+.map iframe {
+  border-radius: 50%;
+  height: 20rem;
+  width: 100%;
+}
